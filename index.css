@@ -1,0 +1,377 @@
+:root {
+  --bg: #060811;
+  --bg-elevated: #10131f;
+  --line: rgba(255, 255, 255, 0.1);
+  --text: rgba(255, 255, 255, 0.92);
+  --text-dim: rgba(255, 255, 255, 0.58);
+  --accent: #e0a83e;
+
+  --font: "Barlow Condensed", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+
+  --sidebar-width: 280px;
+
+  --text-display: clamp(2.6rem, 1.5rem + 5vw, 4.2rem);
+  --text-title: clamp(1.5rem, 1.25rem + 1.1vw, 1.9rem);
+  --text-lead: clamp(1.05rem, 1rem + 0.3vw, 1.15rem);
+  --text-body: clamp(0.95rem, 0.92rem + 0.15vw, 1rem);
+  --text-label: clamp(0.72rem, 0.7rem + 0.05vw, 0.78rem);
+
+  --space-section: clamp(48px, 20px + 4vw, 72px);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.05), transparent 38%),
+    radial-gradient(circle at 78% 62%, rgba(110, 140, 255, 0.07), transparent 42%),
+    linear-gradient(180deg, #0a0e1c 0%, var(--bg) 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Starfield / globe background ---------- */
+
+#stars-canvas,
+#globe-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 56px 40px;
+  border-right: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.sidebar-name {
+  font-size: clamp(1.4rem, 1.2rem + 1vw, 1.7rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 40px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+}
+
+.sidebar-nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: var(--text-label);
+  letter-spacing: 0.04em;
+  padding: 8px 0 8px 12px;
+  border-left: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a:focus-visible {
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+
+/* ---------- Main content ---------- */
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin-left: var(--sidebar-width);
+  max-width: 760px;
+  padding: 88px 64px 140px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: var(--line);
+  margin: var(--space-section) 0;
+}
+
+/* ---------- Intro ---------- */
+
+.intro-name {
+  font-size: var(--text-display);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.intro-meta {
+  color: var(--text-dim);
+  font-size: var(--text-label);
+  letter-spacing: 0.03em;
+  margin-bottom: 28px;
+}
+
+.intro-bio {
+  font-size: var(--text-lead);
+  max-width: 58ch;
+  margin-bottom: 32px;
+}
+
+.intro-links {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-link {
+  color: var(--text-dim);
+  display: inline-flex;
+  transition: color 0.15s ease;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible {
+  color: var(--accent);
+}
+
+/* ---------- Section titles ---------- */
+
+.section-title {
+  font-size: var(--text-title);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--accent);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ---------- Experience / education entries ---------- */
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.entry:first-of-type {
+  padding-top: 0;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  font-size: var(--text-lead);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.entry-org {
+  color: var(--accent);
+  font-size: var(--text-body);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.entry-desc {
+  color: var(--text-dim);
+  font-size: var(--text-body);
+  max-width: 56ch;
+}
+
+.entry-period {
+  color: var(--text-dim);
+  font-size: var(--text-label);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+/* ---------- Skills ---------- */
+
+.skills-group {
+  margin-bottom: 32px;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-subtitle {
+  font-size: var(--text-label);
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-list li {
+  font-size: var(--text-body);
+  padding-left: 18px;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ---------- Interests ---------- */
+
+.interest-text {
+  font-size: var(--text-body);
+  color: var(--text-dim);
+  max-width: 58ch;
+  margin-bottom: 20px;
+}
+
+.interest-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Awards ---------- */
+
+.awards-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.awards-list li {
+  font-size: var(--text-body);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.awards-list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+  }
+
+  .profile-photo {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 0;
+  }
+
+  .sidebar-name {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    width: auto;
+    gap: 4px;
+  }
+
+  .sidebar-nav a {
+    padding: 6px 10px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .sidebar-nav a:hover,
+  .sidebar-nav a:focus-visible {
+    border-left-color: transparent;
+    border-bottom-color: var(--accent);
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 48px 24px 80px;
+  }
+}
+
+@media (max-width: 560px) {
+  .entry {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .entry-period {
+    padding-top: 0;
+  }
+}

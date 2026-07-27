@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>박성원 - 이력서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<canvas id="stars-canvas" aria-hidden="true"></canvas>
+<canvas id="globe-canvas" aria-hidden="true"></canvas>
+
+<aside class="sidebar">
+  <div class="profile-photo" aria-hidden="true"></div>
+  <h1 class="sidebar-name">박성원</h1>
+  <nav class="sidebar-nav">
+    <a href="#intro">소개</a>
+    <a href="#experience">경력</a>
+    <a href="#education">학력</a>
+    <a href="#skills">기술</a>
+    <a href="#interests">관심사</a>
+    <a href="#awards">수상 및 자격</a>
+  </nav>
+</aside>
+
+<main class="content">
+
+  <section id="intro" class="section">
+    <h2 class="intro-name">박성원</h2>
+    <p class="intro-meta">서울, 대한민국 · joon1887@gmail.com · 010-1234-5678</p>
+    <p class="intro-bio">
+      사용자 경험과 성능을 함께 고려하는 프론트엔드 개발자입니다. 새로운 기술을 빠르게 학습하고
+      팀과 적극적으로 소통하며 문제를 해결하는 것을 좋아합니다. 작은 디테일이 전체 서비스의
+      완성도를 좌우한다고 믿으며, 유지보수하기 쉬운 코드를 작성하려 노력합니다.
+    </p>
+    <div class="intro-links">
+      <a href="https://github.com/example" class="icon-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.12.82-.27.82-.6
+          0-.3-.01-1.08-.02-2.12-3.34.75-4.04-1.66-4.04-1.66-.55-1.44-1.34-1.83-1.34-1.83
+          -1.09-.77.08-.75.08-.75 1.2.09 1.84 1.27 1.84 1.27 1.07 1.87 2.81 1.33 3.5 1.02
+          .11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.38-5.47-6.15 0-1.36.47-2.47 1.24-3.34
+          -.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.28a11.2 11.2 0 0 1 6 0c2.29-1.61
+          3.3-1.28 3.3-1.28.66 1.71.24 2.97.12 3.28.77.87 1.24 1.98 1.24 3.34
+          0 4.78-2.81 5.83-5.49 6.14.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38
+          0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/example" class="icon-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86
+          0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85
+          3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0
+          1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+        </svg>
+      </a>
+      <a href="mailto:gildong@example.com" class="icon-link" aria-label="이메일">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M2 4h20v16H2V4zm2 2.5V18h16V6.5l-8 5.5-8-5.5zm.8-1.5L12
+          10 19.2 5H4.8z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="experience" class="section">
+    <h3 class="section-title">경력</h3>
+
+    <div class="entry">
+      <div class="entry-main">
+        <p class="entry-title">프론트엔드 개발자</p>
+        <p class="entry-org">주식회사 예시테크</p>
+        <p class="entry-desc">
+          웹 서비스의 사용자 인터페이스를 설계하고 개발했습니다. 컴포넌트 라이브러리를
+          구축해 팀 전체의 개발 속도를 개선했습니다.
+        </p>
+      </div>
+      <p class="entry-period">2023.03 - 현재</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-main">
+        <p class="entry-title">웹 개발자</p>
+        <p class="entry-org">예시 스타트업</p>
+        <p class="entry-desc">
+          초기 단계 서비스의 랜딩 페이지와 관리자 도구를 개발했습니다. 디자이너와 협업하여
+          반응형 레이아웃을 구현했습니다.
+        </p>
+      </div>
+      <p class="entry-period">2021.06 - 2023.02</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-main">
+        <p class="entry-title">인턴 개발자</p>
+        <p class="entry-org">예시 소프트웨어</p>
+        <p class="entry-desc">
+          사내 대시보드 개선 프로젝트에 참여해 데이터 시각화 기능을 추가했습니다.
+        </p>
+      </div>
+      <p class="entry-period">2020.07 - 2020.12</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="education" class="section">
+    <h3 class="section-title">학력</h3>
+
+    <div class="entry">
+      <div class="entry-main">
+        <p class="entry-title">컴퓨터공학 학사</p>
+        <p class="entry-org">예시대학교</p>
+        <p class="entry-desc">
+          소프트웨어 공학과 웹 프로그래밍을 중심으로 공부했으며, 졸업 프로젝트로 웹 기반
+          협업 도구를 개발했습니다.
+        </p>
+      </div>
+      <p class="entry-period">2016.03 - 2020.02</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-main">
+        <p class="entry-title">이과 계열</p>
+        <p class="entry-org">예시고등학교</p>
+        <p class="entry-desc">
+          수학과 과학 동아리 활동을 하며 프로그래밍에 처음 흥미를 갖게 되었습니다.
+        </p>
+      </div>
+      <p class="entry-period">2013.03 - 2016.02</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="skills" class="section">
+    <h3 class="section-title">기술</h3>
+
+    <div class="skills-group">
+      <h4 class="skills-subtitle">사용 도구</h4>
+      <ul class="skills-list">
+        <li>HTML / CSS / JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <h4 class="skills-subtitle">작업 방식</h4>
+      <ul class="skills-list">
+        <li>애자일 방식의 짧은 주기 개발</li>
+        <li>코드 리뷰를 통한 품질 관리</li>
+        <li>문서화를 통한 지식 공유</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="interests" class="section">
+    <h3 class="section-title">관심사</h3>
+    <p class="interest-text">
+      새로운 프론트엔드 기술 동향을 살펴보고 작은 사이드 프로젝트를 만들어보는 것을
+      좋아합니다. 최근에는 웹 접근성과 성능 최적화에 관심을 가지고 관련 자료를 찾아보고 있습니다.
+    </p>
+    <p class="interest-text">
+      주말에는 등산과 사진 촬영을 즐기며, 여행을 통해 새로운 영감을 얻는 것을 좋아합니다.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section id="awards" class="section">
+    <h3 class="section-title">수상 및 자격</h3>
+    <ul class="awards-list">
+      <li>예시 해커톤 대상 (2022)</li>
+      <li>정보처리기사 자격증 취득 (2021)</li>
+      <li>예시대학교 우수 졸업 프로젝트상 (2020)</li>
+    </ul>
+  </section>
+
+</main>
+
+<script>
+(function () {
+  var canvas = document.getElementById("stars-canvas");
+  var ctx = canvas.getContext("2d");
+  var stars = [];
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var STAR_COUNT_PER_PX = 1 / 9000;
+  var LINK_DISTANCE = 130;
+
+  function resize() {
+    canvas.width = window.innerWidth * window.devicePixelRatio;
+    canvas.height = window.innerHeight * window.devicePixelRatio;
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+    seedStars();
+  }
+
+  function seedStars() {
+    var count = Math.round(window.innerWidth * window.innerHeight * STAR_COUNT_PER_PX);
+    stars = [];
+    for (var i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.2 + 0.3,
+        baseAlpha: Math.random() * 0.5 + 0.25,
+        twinkleSpeed: Math.random() * 0.015 + 0.005,
+        phase: Math.random() * Math.PI * 2
+      });
+    }
+  }
+
+  function draw(time) {
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+    for (var i = 0; i < stars.length; i++) {
+      var s = stars[i];
+      var alpha = reduceMotion
+        ? s.baseAlpha
+        : s.baseAlpha + Math.sin(time * s.twinkleSpeed + s.phase) * 0.25;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(255, 255, 255, " + Math.max(0, alpha) + ")";
+      ctx.fill();
+    }
+
+    for (var a = 0; a < stars.length; a++) {
+      for (var b = a + 1; b < stars.length; b++) {
+        var dx = stars[a].x - stars[b].x;
+        var dy = stars[a].y - stars[b].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < LINK_DISTANCE) {
+          ctx.beginPath();
+          ctx.moveTo(stars[a].x, stars[a].y);
+          ctx.lineTo(stars[b].x, stars[b].y);
+          ctx.strokeStyle = "rgba(224, 168, 62, " + (1 - dist / LINK_DISTANCE) * 0.15 + ")";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    if (!reduceMotion) {
+      requestAnimationFrame(draw);
+    }
+  }
+
+  window.addEventListener("resize", resize);
+  resize();
+  requestAnimationFrame(draw);
+})();
+
+(function () {
+  var canvas = document.getElementById("globe-canvas");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var structureLines = [];
+  var landDots = [];
+  var cityLights = [];
+  var theta = 0;
+
+  function deg2rad(d) {
+    return (d * Math.PI) / 180;
+  }
+
+  function smoothstep(edge0, edge1, x) {
+    var t = Math.min(1, Math.max(0, (x - edge0) / (edge1 - edge0)));
+    return t * t * (3 - 2 * t);
+  }
+
+  var LIGHT = (function () {
+    var v = { x: -0.55, y: 0.35, z: 0.8 };
+    var len = Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
+    return { x: v.x / len, y: v.y / len, z: v.z / len };
+  })();
+
+  var CLUSTERS = [
+    { lat: 50, lon: 10, count: 46, spread: 12 },
+    { lat: 33, lon: 118, count: 42, spread: 13 },
+    { lat: 22, lon: 78, count: 28, spread: 11 },
+    { lat: 38, lon: -80, count: 34, spread: 11 },
+    { lat: 34, lon: -118, count: 16, spread: 7 },
+    { lat: -20, lon: -45, count: 22, spread: 10 },
+    { lat: 8, lon: 5, count: 16, spread: 8 },
+    { lat: -33, lon: 149, count: 12, spread: 7 }
+  ];
+
+  var CONTINENTS = [
+    [[-17,15],[-10,25],[0,32],[10,32],[20,32],[32,31],[35,27],[43,12],[51,12],
+     [51,2],[42,-3],[40,-15],[35,-25],[27,-34],[18,-34],[15,-25],[12,-15],
+     [9,4],[-6,5],[-17,15]],
+    [[-10,36],[0,43],[10,45],[20,42],[30,45],[40,45],[50,45],[60,50],[70,55],
+     [80,60],[100,60],[120,55],[130,45],[140,45],[145,35],[135,25],[120,10],
+     [100,5],[95,15],[80,20],[70,25],[60,25],[50,30],[40,32],[30,32],[20,38],
+     [10,38],[0,38],[-10,36]],
+    [[-165,68],[-150,60],[-140,60],[-130,55],[-125,48],[-124,40],[-117,32],
+     [-105,20],[-97,16],[-90,15],[-80,10],[-77,8],[-80,25],[-82,30],[-80,32],
+     [-75,35],[-70,42],[-65,45],[-60,50],[-65,60],[-80,68],[-100,70],
+     [-130,70],[-165,68]],
+    [[-55,60],[-45,65],[-30,70],[-25,77],[-40,83],[-55,75],[-58,65],[-55,60]],
+    [[-80,10],[-75,5],[-70,0],[-70,-10],[-72,-18],[-70,-25],[-71,-35],
+     [-73,-45],[-70,-53],[-65,-55],[-60,-50],[-55,-35],[-48,-25],[-40,-15],
+     [-35,-8],[-40,0],[-50,5],[-60,10],[-70,10],[-80,10]],
+    [[113,-22],[120,-18],[130,-12],[137,-12],[142,-11],[145,-16],[148,-20],
+     [150,-25],[150,-33],[145,-38],[140,-38],[135,-35],[130,-32],[125,-33],
+     [118,-35],[114,-30],[113,-22]]
+  ];
+  var CONTINENT_DENSITY = [180, 260, 190, 35, 140, 70];
+
+  function pointInPolygon(px, py, poly) {
+    var inside = false;
+    for (var i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+      var xi = poly[i][0], yi = poly[i][1];
+      var xj = poly[j][0], yj = poly[j][1];
+      var intersect = (yi > py) !== (yj > py) &&
+        px < ((xj - xi) * (py - yi)) / (yj - yi) + xi;
+      if (intersect) inside = !inside;
+    }
+    return inside;
+  }
+
+  function scatterInPolygon(poly, count) {
+    var lonMin = Infinity, lonMax = -Infinity, latMin = Infinity, latMax = -Infinity;
+    poly.forEach(function (pt) {
+      lonMin = Math.min(lonMin, pt[0]);
+      lonMax = Math.max(lonMax, pt[0]);
+      latMin = Math.min(latMin, pt[1]);
+      latMax = Math.max(latMax, pt[1]);
+    });
+    var points = [];
+    var attempts = 0;
+    while (points.length < count && attempts < count * 10) {
+      attempts++;
+      var lon = lonMin + Math.random() * (lonMax - lonMin);
+      var lat = latMin + Math.random() * (latMax - latMin);
+      if (pointInPolygon(lon, lat, poly)) {
+        points.push({ lon: lon, lat: lat });
+      }
+    }
+    return points;
+  }
+
+  function buildGeometry() {
+    structureLines = [];
+    var equator = [];
+    for (var lonDeg = 0; lonDeg <= 360; lonDeg += 6) {
+      equator.push({ lat: 0, lon: deg2rad(lonDeg) });
+    }
+    structureLines.push(equator);
+
+    [-15, 90].forEach(function (lonDeg2) {
+      var meridian = [];
+      for (var latDeg = -90; latDeg <= 90; latDeg += 6) {
+        meridian.push({ lat: deg2rad(latDeg), lon: deg2rad(lonDeg2) });
+      }
+      structureLines.push(meridian);
+    });
+
+    landDots = [];
+    CONTINENTS.forEach(function (poly, idx) {
+      scatterInPolygon(poly, CONTINENT_DENSITY[idx]).forEach(function (pt) {
+        landDots.push({
+          lat: deg2rad(pt.lat),
+          lon: deg2rad(pt.lon),
+          size: Math.random() * 0.9 + 0.4,
+          brightness: Math.random() * 0.5 + 0.3
+        });
+      });
+    });
+
+    cityLights = [];
+    CLUSTERS.forEach(function (cluster) {
+      for (var i = 0; i < cluster.count; i++) {
+        var latOffset = (Math.random() - 0.5) * 2 * cluster.spread;
+        var lat = Math.max(-85, Math.min(85, cluster.lat + latOffset));
+        var lonSpread = cluster.spread / Math.max(0.3, Math.cos(deg2rad(lat)));
+        var lon = cluster.lon + (Math.random() - 0.5) * 2 * lonSpread;
+        cityLights.push({
+          lat: deg2rad(lat),
+          lon: deg2rad(lon),
+          size: Math.random() * 1.1 + 0.5,
+          warmth: Math.random(),
+          brightness: Math.random() * 0.6 + 0.4,
+          twinkleSpeed: Math.random() * 0.03 + 0.01,
+          phase: Math.random() * Math.PI * 2
+        });
+      }
+    });
+  }
+
+  function project(pt, angle, R, cx, cy) {
+    var x0 = R * Math.cos(pt.lat) * Math.cos(pt.lon);
+    var y0 = R * Math.sin(pt.lat);
+    var z0 = R * Math.cos(pt.lat) * Math.sin(pt.lon);
+    var x = x0 * Math.cos(angle) + z0 * Math.sin(angle);
+    var z = -x0 * Math.sin(angle) + z0 * Math.cos(angle);
+    var nx = x / R, ny = y0 / R, nz = z / R;
+    var light = nx * LIGHT.x + ny * LIGHT.y + nz * LIGHT.z;
+    return {
+      x: cx + x,
+      y: cy - y0,
+      depth: (z + R) / (2 * R),
+      day: smoothstep(-0.12, 0.12, light)
+    };
+  }
+
+  var cx = 0, cy = 0, R = 0;
+
+  function layout() {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    R = Math.min(w, h) * 0.42;
+    cx = w * 0.74;
+    cy = h * 0.36;
+  }
+
+  function resize() {
+    canvas.width = window.innerWidth * window.devicePixelRatio;
+    canvas.height = window.innerHeight * window.devicePixelRatio;
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+    layout();
+  }
+
+  function strokeStructureLine(points) {
+    for (var i = 0; i < points.length - 1; i++) {
+      var p1 = project(points[i], theta, R, cx, cy);
+      var p2 = project(points[i + 1], theta, R, cx, cy);
+      var depth = (p1.depth + p2.depth) / 2;
+      var alpha = smoothstep(0.3, 0.6, depth) * 0.05;
+      if (alpha <= 0) continue;
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.strokeStyle = "rgba(150, 175, 220, " + alpha + ")";
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+  }
+
+  function draw(time) {
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+    var glow = ctx.createRadialGradient(cx, cy, R * 0.15, cx, cy, R * 1.45);
+    glow.addColorStop(0, "rgba(90, 120, 190, 0.06)");
+    glow.addColorStop(0.55, "rgba(60, 85, 150, 0.03)");
+    glow.addColorStop(1, "rgba(0, 0, 0, 0)");
+    ctx.fillStyle = glow;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R * 1.45, 0, Math.PI * 2);
+    ctx.fill();
+
+    var subsolarX = cx + R * LIGHT.x * 0.5;
+    var subsolarY = cy - R * LIGHT.y * 0.5;
+
+    var shade = ctx.createRadialGradient(
+      subsolarX, subsolarY, R * 0.05,
+      cx, cy, R
+    );
+    shade.addColorStop(0, "rgba(95, 115, 155, 0.06)");
+    shade.addColorStop(0.5, "rgba(20, 26, 42, 0.05)");
+    shade.addColorStop(1, "rgba(0, 0, 3, 0.4)");
+    ctx.fillStyle = shade;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.fill();
+
+    var dlen = Math.sqrt(LIGHT.x * LIGHT.x + LIGHT.y * LIGHT.y) || 1;
+    var udx = LIGHT.x / dlen, udy = -LIGHT.y / dlen;
+    var dayNight = ctx.createLinearGradient(
+      cx - R * udx, cy - R * udy,
+      cx + R * udx, cy + R * udy
+    );
+    dayNight.addColorStop(0, "rgba(0, 0, 0, 0.22)");
+    dayNight.addColorStop(0.38, "rgba(0, 0, 0, 0.05)");
+    dayNight.addColorStop(0.5, "rgba(255, 150, 90, 0.05)");
+    dayNight.addColorStop(0.62, "rgba(140, 175, 255, 0.05)");
+    dayNight.addColorStop(1, "rgba(170, 195, 240, 0.14)");
+    ctx.fillStyle = dayNight;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.fill();
+
+    var limb = ctx.createRadialGradient(cx, cy, R * 0.55, cx, cy, R);
+    limb.addColorStop(0, "rgba(0, 0, 0, 0)");
+    limb.addColorStop(1, "rgba(0, 0, 0, 0.32)");
+    ctx.fillStyle = limb;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.fill();
+
+    var glint = ctx.createRadialGradient(subsolarX, subsolarY, 0, subsolarX, subsolarY, R * 0.22);
+    glint.addColorStop(0, "rgba(220, 232, 255, 0.16)");
+    glint.addColorStop(1, "rgba(220, 232, 255, 0)");
+    ctx.fillStyle = glint;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.fill();
+
+    var rim = ctx.createLinearGradient(cx - R, cy - R, cx + R, cy + R);
+    rim.addColorStop(0, "rgba(160, 190, 255, 0.45)");
+    rim.addColorStop(0.5, "rgba(110, 140, 210, 0.1)");
+    rim.addColorStop(1, "rgba(30, 40, 65, 0.04)");
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.strokeStyle = rim;
+    ctx.lineWidth = 1.25;
+    ctx.stroke();
+
+    structureLines.forEach(strokeStructureLine);
+
+    landDots.forEach(function (dot) {
+      var p = project(dot, theta, R, cx, cy);
+      var edge = smoothstep(0.32, 0.6, p.depth);
+      if (edge <= 0) return;
+      var day = p.day;
+      var r = Math.round(140 + (205 - 140) * day);
+      var g = Math.round(158 + (215 - 158) * day);
+      var b = Math.round(196 + (238 - 196) * day);
+      var alpha = edge * dot.brightness * (0.09 + day * 0.22);
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, dot.size, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
+      ctx.fill();
+    });
+
+    cityLights.forEach(function (light) {
+      var p = project(light, theta, R, cx, cy);
+      var edge = smoothstep(0.34, 0.62, p.depth);
+      if (edge <= 0) return;
+      var twinkle = reduceMotion ? 1 : 0.8 + Math.sin(time * light.twinkleSpeed + light.phase) * 0.2;
+      var r = Math.round(224 + light.warmth * 20);
+      var g = Math.round(168 + light.warmth * 40);
+      var b = Math.round(62 + (1 - light.warmth) * 60);
+      var nightAmount = 1 - p.day;
+      var alpha = edge * light.brightness * twinkle * 0.85 * nightAmount;
+      if (alpha <= 0.003) return;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, light.size * (0.6 + edge * 0.5), 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
+      ctx.fill();
+    });
+
+    if (!reduceMotion) {
+      theta += 0.0016;
+      requestAnimationFrame(draw);
+    }
+  }
+
+  buildGeometry();
+  window.addEventListener("resize", resize);
+  resize();
+  requestAnimationFrame(draw);
+})();
+</script>
+
+</body>
+</html>
