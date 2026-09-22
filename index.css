@@ -108,7 +108,8 @@ body {
 }
 
 .sidebar-nav a:hover,
-.sidebar-nav a:focus-visible {
+.sidebar-nav a:focus-visible,
+.sidebar-nav a.is-active {
   color: var(--text);
   border-left-color: var(--accent);
 }
@@ -119,8 +120,8 @@ body {
   position: relative;
   z-index: 1;
   margin-left: var(--sidebar-width);
-  max-width: 920px;
-  padding: 88px 64px 140px;
+  max-width: 1240px;
+  padding: 88px 72px 140px;
 }
 
 .divider {
@@ -132,23 +133,30 @@ body {
 
 /* ---------- Intro ---------- */
 
+.intro-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 20px;
+  margin-bottom: 28px;
+}
+
 .intro-name {
   font-size: var(--text-display);
   font-weight: 600;
   letter-spacing: 0.005em;
   line-height: 1.05;
-  margin-bottom: 20px;
 }
 
 .intro-meta {
   color: var(--text-dim);
-  font-size: var(--text-label);
-  letter-spacing: 0.03em;
-  margin-bottom: 28px;
+  font-size: var(--text-lead);
+  letter-spacing: 0.02em;
 }
 
 .intro-bio {
   font-size: var(--text-lead);
+  max-width: 92ch;
   margin-bottom: 32px;
 }
 
@@ -215,7 +223,8 @@ body {
 .entry-title {
   font-size: calc(var(--text-entry) * var(--title-scale));
   font-weight: 600;
-  margin-bottom: 4px;
+  line-height: 1.35;
+  margin-bottom: 6px;
 }
 
 .entry-org {
@@ -228,7 +237,7 @@ body {
 .entry-desc {
   color: var(--text-dim);
   font-size: var(--text-body);
-  max-width: 56ch;
+  max-width: 92ch;
 }
 
 .entry-period {
@@ -288,7 +297,7 @@ body {
 .interest-text {
   font-size: var(--text-body);
   color: var(--text-dim);
-  max-width: 58ch;
+  max-width: 92ch;
   margin-bottom: 20px;
 }
 
@@ -357,7 +366,8 @@ body {
   }
 
   .sidebar-nav a:hover,
-  .sidebar-nav a:focus-visible {
+  .sidebar-nav a:focus-visible,
+  .sidebar-nav a.is-active {
     border-left-color: transparent;
     border-bottom-color: var(--accent);
   }

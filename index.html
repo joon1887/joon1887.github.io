@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>박성원 - 이력서</title>
+<title>Seongwon Park - Resume</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,26 +16,29 @@
 
 <aside class="sidebar">
   <div class="profile-photo" aria-hidden="true"></div>
-  <h1 class="sidebar-name">박성원</h1>
+  <h1 class="sidebar-name">Seongwon Park</h1>
   <nav class="sidebar-nav">
-    <a href="#intro">소개</a>
+    <a href="#intro">About</a>
     <a href="#interests">Interests</a>
-    <a href="#education">학력</a>
-    <a href="#research">연구경험</a>
-    <a href="#skills">기술</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
   </nav>
 </aside>
 
 <main class="content">
 
   <section id="intro" class="section">
-    <h2 class="intro-name">박성원</h2>
-    <p class="intro-meta">joon1887@gmail.com</p>
+    <div class="intro-heading">
+      <h2 class="intro-name">Seongwon Park</h2>
+      <p class="intro-meta">joon1887@gmail.com</p>
+    </div>
     <p class="intro-bio">
-      바이오메디컬화학공학·바이오메디컬소프트웨어 복수전공, 학부연구생으로 대장암 적정성평가 자료와
-      HIRA 청구자료를 연계한 대규모 임상 데이터 분석을 R로 수행했습니다. EMR·청구자료 기반 임상 연구와
-      병원 정보시스템(HIS)에 관심이 있으며, 분석 결과를 병원에서 실제 쓰이는 시스템으로 구현하는 일을
-      하고자 합니다.
+      Double major in Biomedical Chemical Engineering and Biomedical Software. As an
+      undergraduate researcher, I used R to analyze large-scale clinical data linking
+      colorectal cancer quality assessment records with HIRA claims data. My interests are
+      clinical research built on EMR and claims data, and hospital information systems (HIS).
+      I want to turn analytical findings into systems hospitals actually use.
     </p>
     <div class="intro-links">
       <a href="https://github.com/joon1887" class="icon-link" aria-label="GitHub">
@@ -50,7 +53,7 @@
           0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0z"/>
         </svg>
       </a>
-      <a href="mailto:joon1887@gmail.com" class="icon-link" aria-label="이메일">
+      <a href="mailto:joon1887@gmail.com" class="icon-link" aria-label="Email">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M2 4h20v16H2V4zm2 2.5V18h16V6.5l-8 5.5-8-5.5zm.8-1.5L12
           10 19.2 5H4.8z"/>
@@ -73,53 +76,67 @@
   <hr class="divider">
 
   <section id="education" class="section">
-    <h3 class="section-title">학력</h3>
+    <h3 class="section-title">Education</h3>
 
     <div class="entry">
       <div class="entry-main">
-        <p class="entry-title">바이오메디컬화학공학과</p>
-        <p class="entry-org">가톨릭대학교 성심캠퍼스</p>
+        <p class="entry-title">Department of Biomedical Chemical Engineering</p>
+        <p class="entry-org">The Catholic University of Korea, Songsim Campus</p>
       </div>
-      <p class="entry-period">2021.03 - 2021.08 · 2023.09 - 현재</p>
+      <p class="entry-period">2021.03 ~ 2021.08 · 2023.09 ~ Present</p>
     </div>
 
     <div class="entry">
       <div class="entry-main">
-        <p class="entry-title">바이오메디컬소프트웨어학과</p>
-        <p class="entry-org">가톨릭대학교 성심캠퍼스</p>
+        <p class="entry-title">Department of Biomedical Software</p>
+        <p class="entry-org">The Catholic University of Korea, Songsim Campus</p>
       </div>
-      <p class="entry-period">2026.03 - 현재</p>
+      <p class="entry-period">2026.03 ~ Present</p>
     </div>
   </section>
 
   <hr class="divider">
 
   <section id="research" class="section">
-    <h3 class="section-title">연구경험</h3>
+    <h3 class="section-title">Research</h3>
 
     <div class="entry">
       <div class="entry-main">
-        <p class="entry-title">학부연구생</p>
-        <p class="entry-org">가톨릭대학교 바이오메디컬소프트웨어학과 PHI LAB (지도교수 김효정)</p>
+        <p class="entry-title">Age-specific Differences in Treatment Patterns and Adherence to
+          Treatment in Patients with Colorectal Cancer: A Nationwide Cohort Study</p>
+        <p class="entry-org">PHI Lab · Undergraduate Researcher</p>
         <p class="entry-desc">
-          대장암 적정성평가 자료와 HIRA 청구자료를 연계한 대규모 임상 데이터 분석을 R로 수행했습니다.
+          Built a patient-level (JID) cohort linking the colorectal cancer quality assessment
+          survey (2018 and 2022 waves) with HIRA claims data (statement, treatment detail, and
+          prescription tables). Designed and ran the preprocessing pipeline: established
+          criteria for resolving patients submitted by multiple institutions, defined the index
+          date from the date of surgery, and generated the join key tables. Also handled
+          exploratory analysis, including patient distributions by diagnosis code and stage, and
+          prepared the EDA presentation materials. All analysis was done in R.
         </p>
       </div>
-      <p class="entry-period">2026.05 - 현재</p>
+      <p class="entry-period">2026.07 ~ Present</p>
     </div>
   </section>
 
   <hr class="divider">
 
   <section id="skills" class="section">
-    <h3 class="section-title">기술</h3>
+    <h3 class="section-title">Skills</h3>
 
     <div class="skills-group">
-      <h4 class="skills-subtitle">사용 언어</h4>
+      <h4 class="skills-subtitle">Languages</h4>
       <ul class="skills-list">
-        <li>Python</li>
+        <li>Python (pandas, numpy, matplotlib, scikit-learn, PyTorch)</li>
         <li>C++</li>
-        <li>R</li>
+        <li>R (data.table, dplyr, ggplot2)</li>
+      </ul>
+    </div>
+
+    <div class="skills-group">
+      <h4 class="skills-subtitle">Databases</h4>
+      <ul class="skills-list">
+        <li>PostgreSQL</li>
       </ul>
     </div>
   </section>
@@ -127,6 +144,60 @@
 </main>
 
 <script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll(".sidebar-nav a"));
+  var targets = links
+    .map(function (link) {
+      return { link: link, section: document.querySelector(link.getAttribute("href")) };
+    })
+    .filter(function (t) {
+      return t.section;
+    });
+  if (!targets.length) return;
+
+  var activeIndex = -1;
+  var queued = false;
+
+  function setActive(index) {
+    if (index === activeIndex) return;
+    if (activeIndex >= 0) {
+      targets[activeIndex].link.classList.remove("is-active");
+      targets[activeIndex].link.removeAttribute("aria-current");
+    }
+    activeIndex = index;
+    targets[activeIndex].link.classList.add("is-active");
+    targets[activeIndex].link.setAttribute("aria-current", "true");
+  }
+
+  function update() {
+    queued = false;
+    var doc = document.documentElement;
+    var line = window.innerHeight * 0.3;
+    var atBottom = window.scrollY + window.innerHeight >= doc.scrollHeight - 2;
+    var next = 0;
+
+    if (atBottom) {
+      next = targets.length - 1;
+    } else {
+      for (var i = 0; i < targets.length; i++) {
+        if (targets[i].section.getBoundingClientRect().top <= line) next = i;
+      }
+    }
+
+    setActive(next);
+  }
+
+  function onScroll() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(update);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  update();
+})();
+
 (function () {
   var canvas = document.getElementById("stars-canvas");
   var ctx = canvas.getContext("2d");
