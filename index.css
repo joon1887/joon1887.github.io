@@ -6,13 +6,16 @@
   --text-dim: rgba(255, 255, 255, 0.58);
   --accent: #e0a83e;
 
-  --font: "Barlow Condensed", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font: "Inter", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 
   --sidebar-width: 280px;
 
   --text-display: clamp(2.6rem, 1.5rem + 5vw, 4.2rem);
   --text-title: clamp(1.5rem, 1.25rem + 1.1vw, 1.9rem);
   --text-lead: clamp(1.05rem, 1rem + 0.3vw, 1.15rem);
+  --text-entry: clamp(1.05rem, 0.98rem + 0.35vw, 1.2rem);
+  --title-scale: 1.25;
+  --period-scale: 0.88;
   --text-body: clamp(0.95rem, 0.92rem + 0.15vw, 1rem);
   --text-label: clamp(0.72rem, 0.7rem + 0.05vw, 0.78rem);
 
@@ -116,7 +119,7 @@ body {
   position: relative;
   z-index: 1;
   margin-left: var(--sidebar-width);
-  max-width: 760px;
+  max-width: 920px;
   padding: 88px 64px 140px;
 }
 
@@ -146,7 +149,6 @@ body {
 
 .intro-bio {
   font-size: var(--text-lead);
-  max-width: 58ch;
   margin-bottom: 32px;
 }
 
@@ -211,7 +213,7 @@ body {
 }
 
 .entry-title {
-  font-size: var(--text-lead);
+  font-size: calc(var(--text-entry) * var(--title-scale));
   font-weight: 600;
   margin-bottom: 4px;
 }
@@ -230,9 +232,11 @@ body {
 }
 
 .entry-period {
-  color: var(--text-dim);
-  font-size: var(--text-label);
-  letter-spacing: 0.03em;
+  color: var(--text);
+  font-size: calc(var(--text-entry) * var(--period-scale));
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
   white-space: nowrap;
   padding-top: 2px;
 }
