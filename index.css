@@ -77,7 +77,7 @@ body {
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: var(--bg-elevated);
+  background: var(--bg-elevated) url("profile.jpg") center 10% / cover no-repeat;
   border: 1px solid var(--line);
   margin-bottom: 24px;
   flex-shrink: 0;
