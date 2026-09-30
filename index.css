@@ -169,6 +169,7 @@ body {
   color: var(--text-dim);
   display: inline-flex;
   transition: color 0.15s ease;
+  pointer-events: auto;
 }
 
 .icon-link:hover,
